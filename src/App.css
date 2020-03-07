@@ -1,0 +1,403 @@
+
+*{
+  margin:0;
+  padding: 0;
+  transition: all 0.2s linear;
+  scroll-behavior: smooth;
+}
+body{
+  /* background:  *TODO:*/
+  background:linear-gradient(180deg,#e9c280 51%, #f0f0f0); 
+}
+.sec {
+  width:100vw;
+  padding-bottom:7vh;
+ background-color:whitesmoke;
+ overflow: hidden;
+ 
+}
+
+.sec h1{
+  color: #2c2a2a;
+  margin-left: 57%;
+  font-family: 'Berkshire Swash', cursive;
+}
+.sec p{
+  color: #686565;
+  margin-left: 43%;
+  font-family: 'Open Sans', sans-serif;  
+}
+.ParallaxImageIntro {
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/bgpx.jpg');  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: xx-large + 57rem;
+}
+.ParallaxImageCoronation{
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/image-2.png');  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: xx-large + 57rem;
+}
+
+.ParallaxImageNOTArresrtInAgra{
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/NOTArresrtInAgra.jpg');  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: xx-large + 57rem;
+}
+.ParallaxImageAmar{
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/Shivaji_Maharaj_Raigad.jpg');  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: xx-large + 57rem;
+}
+
+
+
+.ParallaxImageBirth{
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/image-1.jpg');  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.ParallaxImageAfzal{
+  width: 100vw;
+  height: 100vh;
+  background-image:url('./assets/afzal.jpg') ;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.disabled{
+  opacity: 0.0;
+}
+
+
+.unique img{
+  width: 42%;
+  margin: 2.7% 2.7%;
+  border-radius: 5% 5% 5% 5%;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 12px 12px 7px rgb(151, 149, 149);
+  animation:  normal 1s SlideIn linear;
+}
+
+.FaderEffect{
+  background: linear-gradient(90deg,#8d898971,transparent);
+  width: 100%;
+
+  height: 100%;
+}
+
+.SM{
+      margin-left: 47%;
+      margin-bottom: 5vh;
+      padding: 2vh;
+      border-radius: 27px;
+      background: linear-gradient(#4e4376 51%, #2b5876 100%);
+      color: #d1cece;
+      box-shadow:  10px 10px 2px rgb(190, 186, 186);
+      font-size: small;
+      animation: infinite alternate btn_Anim 0.7s linear;
+}
+
+@keyframes btn_Anim{
+  from{
+    padding: 2vh;
+    font-size: small;
+    box-shadow:  10px 10px 2px rgb(190, 186, 186);
+
+  }
+  to{
+   padding: 3vh;
+   font-size: medium;
+   box-shadow:  7px 7px 5px rgb(160, 91, 200);
+
+  }
+}
+
+.FadeIn{
+  animation: normal fadeUP 2s ease-in;
+  transition: all 2s ease-in ;
+}
+
+.Fade-down{
+  animation: normal fadeDOWN 2s ease-in ;
+  transition: all 2s ease-in ;
+}
+
+.Header{
+  justify-content: center;
+  padding-top: 7vh;
+
+  margin-left: 45vw;
+  color: #ffffff;
+  font-size: xx-large;
+  margin-bottom: 0px;
+
+}
+.Navigator{
+  background-color: #2c2a2a;
+  height: 12vh;
+  align-items: center;
+  width: 100%;
+ z-index: 1;
+ position: absolute;
+ overflow: visible;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.Navs{
+  text-decoration: none;
+  padding: 2%;
+  text-align: center;
+  color: aliceblue;
+  display: inline-block;
+  transition: all 0.4s ease-in;
+  fill: rgb(110, 109, 109);
+  font-family: 'Acme';
+  font-size: 67%;
+  font-weight:100;
+  border-radius: 17px;
+  
+}
+
+.BgTexture{
+   height: 70%;
+   widows: 47;
+}
+
+.Inner{
+  display: none;
+  flex-direction: column;
+  z-index: 3;
+}
+.Navs[name='a']:hover{
+  background-color: #534a4a;
+ box-shadow: rgb(144, 132, 132,27%) 1vw 1vh;
+ font-size: 77%;
+ fill: aliceblue;
+ font-weight: bold;
+ 
+}
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+#Droper:hover .Inner{
+  display: block;
+}
+
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+  transition: all 1s linear;
+}
+.content img{
+  animation:  normal 1s SlideIn linear;
+  width: 100vw;
+  height: 70vh;
+}
+
+@keyframes SlideIn{
+  from{
+     opacity: 0.0;
+    margin-right: 50vw;
+  }
+  to{
+ opacity: 1.0;
+  margin-right: 7vw;
+  }
+}
+
+.Main-Header{
+  justify-content: center;
+  padding: 7vw;
+  text-align: center;
+  font-family: monospace;
+  font-size: 3.7rem;
+  transition: all 1s linear;
+  color: #2c2a2a;
+  animation: forwards HeaderAnim 2s linear;
+}
+
+.desc{
+  justify-content: center;
+  
+  padding:10vw;
+  padding-top: 4vw;
+  color: #d1cece;
+  font-size: large;
+}
+
+
+@keyframes fadeUP {
+  from{
+    opacity: 0.0;
+    margin-top: 12vh;
+  }
+  to{
+   opacity: 1.0;
+   margin-top: 0vh;
+  }
+}
+
+@keyframes HeaderAnim{
+  from{
+    font-size: 3.0rem;
+    opacity: 0.0;
+  }
+  to{
+    font-size: 3.7rem;
+    opacity: 1.0;
+
+  }
+}
+
+@keyframes fadeDOWN {
+  from{
+    opacity: 0.0;
+    padding-top: 0vh;
+    font-size: x-large;
+  }
+  to{
+   opacity: 1.0;
+   padding-top: 7vh;
+  font-size: xx-large;
+  font-weight: bolder;
+  }
+}
+
+.Main-Header p{
+  color: #534a4a;
+  animation: forwards fadeUP 2s ease-in;
+  font-family: 'Times New Roman', Times, serif;
+
+
+}
+svg{
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.timelineContainer{
+  display: none;
+  flex-direction: row;
+  transition: all 1s ease-in;
+}
+
+
+#more:hover .timelineContainer{
+ display: flex; 
+ justify-content: space-around;
+} 
+
+#langH,#more{
+  border-radius: 17px;
+}
+
+.tog{
+  display: none;
+  flex-direction: column;
+  transition: all 1s linear;
+}
+
+#langH:hover .tog{
+  color: #d1cece;
+  display: flex;
+}
+
+
+
+
+/* .tog button{
+  background: linear-gradient(90deg, #2b5876,#4e4376);
+  margin:-10px 10px 0px 0px;
+  border-radius:27px;
+  color: #ddd;
+  font-size: larger;
+  font-weight: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 9px 7px 9px 7px;
+  transition: all 0.2s ease-in;
+}
+
+.tog button:hover{
+
+  font-size: x-large;
+  padding: 15px 22px 15px 22px;
+  border-radius: 14px;
+} */
+
+
+
+/* for mobile and tabs */
+ @media only screen and (max-width:600px){
+      .desc{
+        font-size: medium;
+      }
+.ParallaxImageIntro{
+  background-position: center;
+}
+.sec h1{
+  margin-left: 0%;
+}
+     
+.ParallaxImageBirth{
+  background-position:-57vh;
+}
+.Header{
+ text-align: center;
+ margin-left: 0;
+}
+.Main-Header{
+  justify-content: flex-start;
+  padding: 27vw;
+  text-align: center;
+  font-family: monospace;
+  color: #2c2a2a;
+}
+.Main-Header h1{
+  font-size: 37px;
+}
+.Main-Header p{
+  font-size: xx-large;
+
+}
+.content img{
+      display: none;
+}
+ .unique img{
+   display: none;
+
+ }
+.sec p{
+  margin-left: 0%;
+}
+
+}
+
+
+
+
+
